@@ -1,0 +1,2853 @@
+🚀 SCAC (Scalable Collaborative Aggregate Claiming) Benchmark
+═══════════════════════════════════════════════════════════════
+📋 Configuration:
+  Sessions (N): 256
+  Secrets (K): 2
+  Packing factor (l): 4
+  Parties: 16
+  Data file: ../data/data.csv
+
+🔬 Running SCAC benchmark...
+📊 Setting up SCAC parameters...
+⚠️  Failed to open file '../data/data.csv': No such file or directory (os error 2)
+   Using default values
+📊 Usage data: 256 values (range: 100 to 355)
+  ✓ Read 256 usage values from ../data/data.csv
+🔧 Creating SCAC parameters: N=256, K=2, l=4
+Created SCAC circuit: N=256, K=2, Expected LOCA constraints=136324, Our constraints=100753
+Generating SCAC constraints: N=256, K=2
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Total SCAC constraints generated: 100753
+  Circuit size: 131072 (log=17)
+  Max poly degree: 131072 (log=17)
+  Commitment log size: 17
+⚠️  Requested log_size 17 too large, using 10
+✅ SCAC parameters created successfully
+  Actual constraints: 100753
+  LOCA expected: 136324
+  Ratio: 0.74x
+  ✓ Created SCAC circuit:
+    - Actual constraints: 100753
+    - Expected constraints: 136324
+    - Circuit size: 131072
+    - Max poly degree: 131072
+🌐 Setting up network with 16 parties...
+Start:   Comm: from 0 to leader, 1B (thread ThreadId(1))
+End:     Comm: from 0 to leader, 1B (thread ThreadId(1)) 2.651ms
+Start:   Comm: from leader to all, 16B (thread ThreadId(1))
+End:     Comm: from leader to all, 16B (thread ThreadId(1)) 617.769µs
+  ✓ Network initialized
+🔧 Running distributed SCAC proving...
+🔄 Creating party-specific params for party 0 of 16
+🔄 Creating party-specific params for party 1 of 16
+  Party 0 allocated 1 secrets (range: 0-1)
+🔄 Creating party-specific params for party 2 of 16
+⚠️  Party 2 got no secrets, creating dummy
+  Party 1 allocated 1 secrets (range: 1-2)
+  Party 2 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 3 of 16
+⚠️  Party 3 got no secrets, creating dummy
+  Party 3 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 4 of 16
+⚠️  Party 4 got no secrets, creating dummy
+🔄 Creating party-specific params for party 5 of 16
+🔄 Creating party-specific params for party 7 of 16
+⚠️  Party 7 got no secrets, creating dummy
+⚠️  Party 5 got no secrets, creating dummy
+  Party 4 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 8 of 16
+⚠️  Party 8 got no secrets, creating dummy
+🔄 Creating party-specific params for party 6 of 16
+  Party 8 allocated 1 secrets (range: 2-2)
+  Party 5 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 9 of 16
+⚠️  Party 9 got no secrets, creating dummy
+⚠️  Party 6 got no secrets, creating dummy
+  Party 9 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 15 of 16
+  Party 6 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 13 of 16
+⚠️  Party 13 got no secrets, creating dummy
+🔄 Creating party-specific params for party 11 of 16
+  Party 13 allocated 1 secrets (range: 2-2)
+⚠️  Party 15 got no secrets, creating dummy
+🔄 Creating party-specific params for party 12 of 16
+⚠️  Party 12 got no secrets, creating dummy
+🔄 Creating party-specific params for party 14 of 16
+⚠️  Party 14 got no secrets, creating dummy
+🔄 Creating party-specific params for party 10 of 16
+⚠️  Party 10 got no secrets, creating dummy
+  Party 15 allocated 1 secrets (range: 2-2)
+  Party 10 allocated 1 secrets (range: 2-2)
+  Party 7 allocated 1 secrets (range: 2-2)
+  Party 12 allocated 1 secrets (range: 2-2)
+⚠️  Party 11 got no secrets, creating dummy
+  Party 14 allocated 1 secrets (range: 2-2)
+  Party 11 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 2 of 16
+⚠️  Party 2 got no secrets, creating dummy
+🔄 Creating party-specific params for party 4 of 16
+⚠️  Party 4 got no secrets, creating dummy
+  Party 2 allocated 1 secrets (range: 2-2)
+  Party 4 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 10 of 16
+⚠️  Party 10 got no secrets, creating dummy
+  Party 10 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 12 of 16
+⚠️  Party 12 got no secrets, creating dummy
+  Party 12 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 3 of 16
+⚠️  Party 3 got no secrets, creating dummy
+  Party 3 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 1 of 16
+  Party 1 allocated 1 secrets (range: 1-2)
+🔄 Creating party-specific params for party 11 of 16
+⚠️  Party 11 got no secrets, creating dummy
+  Party 11 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 14 of 16
+🔄 Creating party-specific params for party 9 of 16
+⚠️  Party 9 got no secrets, creating dummy
+⚠️  Party 14 got no secrets, creating dummy
+  Party 9 allocated 1 secrets (range: 2-2)
+  Party 14 allocated 1 secrets (range: 2-2)
+Start:   Distributed SCAC (thread ThreadId(38))
+🚀 Starting Distributed SCAC
+🐛 Debug info for party 0:
+  Circuit: N=256, K=2
+  Packing: l=4
+  Constraints: 100753 (LOCA expected: 136324)
+  Secrets for this party: 2
+  Circuit size: 131072
+  Max poly degree: 131072
+🔄 Creating party-specific params for party 0 of 16
+  Party 0 allocated 1 secrets (range: 0-1)
+🔄 Creating party-specific params for party 13 of 16
+⚠️  Party 13 got no secrets, creating dummy
+  Party 13 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 5 of 16
+⚠️  Party 5 got no secrets, creating dummy
+  Party 5 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 15 of 16
+⚠️  Party 15 got no secrets, creating dummy
+  Party 15 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 8 of 16
+⚠️  Party 8 got no secrets, creating dummy
+  Party 8 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 6 of 16
+⚠️  Party 6 got no secrets, creating dummy
+  Party 6 allocated 1 secrets (range: 2-2)
+🔄 Creating party-specific params for party 7 of 16
+⚠️  Party 7 got no secrets, creating dummy
+  Party 7 allocated 1 secrets (range: 2-2)
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+✅ Party parameters created for all parties
+·Start:   Constraint Generation (thread ThreadId(38))
+··Start:   Party Constraint Generation (thread ThreadId(38))
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Generating SCAC constraints: N=256, K=2
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Added SHA256 circuit for secret 0: 49608 constraints
+Total SCAC constraints generated: 100753
+Added SHA256 circuit for secret 1: 49608 constraints
+Total SCAC constraints generated: 100753
+Added SHA256 circuit for secret 1: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Total SCAC constraints generated: 100753
+Added SHA256 circuit for secret 0: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Total SCAC constraints generated: 100753
+Total SCAC constraints generated: 100753
+Total SCAC constraints generated: 100753
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+thread 'main' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/mpc-net/src/multi.rs:347:30:
+called `Result::unwrap()` on an `Err` value: JoinError::Panic(Id(290), ...)
+Added SHA256 circuit for secret 1: 49608 constraints
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+Added SHA256 circuit for secret 1: 49608 constraints
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+Added SHA256 circuit for secret 1: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+Added SHA256 circuit for secret 1: 49608 constraints
+Total SCAC constraints generated: 100753
+Total SCAC constraints generated: 100753
+Added SHA256 circuit for secret 1: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Added SHA256 circuit for secret 1: 49608 constraints
+Total SCAC constraints generated: 100753
+Total SCAC constraints generated: 100753
+Total SCAC constraints generated: 100753
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+Total SCAC constraints generated: 100753
+  Generated 100753 constraints for party 0
+Total SCAC constraints generated: 100753
+Total SCAC constraints generated: 100753
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+Total SCAC constraints generated: 100753
+Added SHA256 circuit for secret 1: 49608 constraints
+··End:     Party Constraint Generation (thread ThreadId(38)) 238.426ms
+Total SCAC constraints generated: 100753
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+·End:     Constraint Generation (thread ThreadId(38)) 255.841ms
+·Start:   Polynomial Commitment (thread ThreadId(38))
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+··Start:   Local: Something (thread ThreadId(38))
+···Start:   Local: Something (thread ThreadId(38))
+·End:     Polynomial Commitment (thread ThreadId(38)) 13.239ms
+···Start:   Distributed Sumcheck (thread ThreadId(38))
+····Start:   Hash Sumcheck (thread ThreadId(38))
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 274ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 128.141µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 81.638µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 7.116µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 329.805µs
+  Hash proofs generated: 1/1
+····End:     Hash Sumcheck (thread ThreadId(38)) 368.224µs
+····Start:   Matching Sumcheck (thread ThreadId(38))
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 246ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 78.737µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 112.055µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.432µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 250.991µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 203ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 74.283µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.577µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.963µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 190.479µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 220ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.365µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.417µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.842µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 182.200µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 200ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.050µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.590µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.942µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 179.025µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 197ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.182µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 75.299µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.079µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 197.556µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 223ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 68.317µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.852µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.725µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 182.137µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 212ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.793µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 79.874µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.195µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 195.106µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 215ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.637µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.411µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.730µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.584µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 214ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.997µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.660µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.918µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.224µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 222ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.797µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.790µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.817µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.649µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 212ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.205µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.092µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.545µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.204µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 225ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.106µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 70.100µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.040µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 199.494µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 237ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.305µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.405µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.760µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 174.700µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 230ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.507µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.713µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.673µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 173.670µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 227ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.365µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.264µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.710µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.927µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 200ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 68.771µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 72.831µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.673µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 188.562µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 205ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 100.385µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 93.368µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.350µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 249.491µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 88.281µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 97.256µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.567µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 248.923µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 235ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.316µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.382µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.847µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 188.289µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.857µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 68.160µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.055µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 180.637µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.979µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.413µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.575µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 173.177µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 190ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.435µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.370µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.470µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 172.931µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 202ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.460µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.066µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.632µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 174.908µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 179ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.155µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.389µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.833µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 173.807µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 188ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.903µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 113.970µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.458µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 236.284µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 205ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.937µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.928µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.820µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 188.733µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 195ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 72.957µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 77.627µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.122µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 204.694µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.525µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.975µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.727µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 174.219µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 206ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.779µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.251µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.710µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 172.560µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.565µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.069µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.902µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 180.992µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 195ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.135µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.020µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.642µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 186.793µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 208ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.454µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.742µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.929µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 180.538µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 183ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.837µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.837µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.890µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.207µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 200ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.944µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.670µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.540µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 172.172µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.002µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.516µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.579µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 172.970µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 176ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.635µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.475µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.530µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 171.213µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.299µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.322µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.503µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.810µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 163ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.527µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 65.030µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.720µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 178.783µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 166ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.942µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.957µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.576µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.848µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.858µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.067µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.799µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.602µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.683µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.509µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.581µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 171.443µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 190ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.327µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.695µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.499µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 172.069µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 187ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.773µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.895µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.672µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.567µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 161ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.153µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.862µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.556µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.458µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 195ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.356µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.183µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.632µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.995µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 163ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.290µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.453µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.449µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.645µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.935µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 66.489µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.820µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 173.648µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 181ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.126µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.595µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.480µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.943µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.545µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.135µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.717µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 185.487µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 197ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.367µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.245µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.620µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.907µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+thread 'tokio-runtime-worker' panicked at /root/projects/SatLPG/525sczk/Scalable-Collaborative-zkSNARK/dist-primitive/src/dsumcheck.rs:292:21:
+index out of bounds: the len is 0 but the index is 0
+······End:     PSStoSS (thread ThreadId(38)) 63.025µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.367µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.947µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 221.082µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 262ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.777µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.761µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.762µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 182.687µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 184ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.323µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.940µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.737µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.350µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.079µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.593µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.693µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 174.282µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.828µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.864µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.532µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.098µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.922µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.407µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.988µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.639µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.465µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.761µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.338µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 178.485µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 180ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.080µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.455µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.542µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.623µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.932µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.324µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.039µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.810µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 194ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.457µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.624µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.137µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.787µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 166ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.859µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.385µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.550µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.572µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.698µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.293µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.548µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.355µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.767µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.130µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.662µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 174.045µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 184ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.390µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.305µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.579µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 172.048µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 181ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.595µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 71.076µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.685µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 178.072µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.618µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.295µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.560µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.864µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.770µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.197µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.491µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.279µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.001µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.595µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.480µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.843µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.937µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.810µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.527µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.220µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.498µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 74.675µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.038µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 193.687µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 223ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.663µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.238µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.651µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.839µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.876µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.470µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.540µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.775µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.138µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.469µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.645µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 171.127µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.062µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.505µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.669µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.065µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.932µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.253µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.432µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.278µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 160ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.637µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.948µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.628µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 171.172µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.789µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.664µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.597µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.299µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 189ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.117µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.538µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.640µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.114µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.652µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.435µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.551µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.802µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 171ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.842µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.338µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.457µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.622µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 179ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.797µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.421µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.597µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.767µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.735µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.380µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.527µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.203µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.547µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 70.772µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.597µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 183.342µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 184ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.265µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.846µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.617µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.382µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.579µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.980µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.563µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.022µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 184ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.947µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.934µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.530µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.153µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.647µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.540µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.543µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.507µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 193ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.430µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.338µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.487µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.466µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 171ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.894µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.879µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.546µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.338µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 188ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.712µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.194µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.614µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.641µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.525µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.799µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.537µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.750µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.003µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 72.847µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.831µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 183.597µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 194ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.864µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.395µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.597µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.075µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.041µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.405µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.590µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.810µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.649µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.999µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.420µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.779µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.285µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.381µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.575µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.833µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.300µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.932µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.640µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.518µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.280µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.788µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.534µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.953µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.957µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.159µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.530µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.109µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.657µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.175µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.665µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.020µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 208ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.540µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.850µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.515µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.165µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 170ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.705µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.437µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.457µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.672µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.757µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.427µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.610µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.438µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 180ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.015µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.189µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.500µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.323µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.587µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.375µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.635µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.050µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.570µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.059µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.572µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.525µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 166ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.655µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.309µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.510µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.946µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.105µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.252µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.542µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.488µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.033µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.463µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.496µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.756µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 202ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.413µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.781µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.508µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.862µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 162ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.843µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.799µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.671µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.183µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.403µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.216µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.562µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.542µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.635µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.756µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.446µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.442µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.392µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 82.407µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.972µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 192.822µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.963µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.432µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.503µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.861µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.004µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.850µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.635µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.897µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.152µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.520µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.485µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.352µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.677µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.231µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.637µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 167.998µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 170ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.114µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.191µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.534µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.675µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 190ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.665µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.223µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.494µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.395µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.707µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.845µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.525µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.008µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.936µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.725µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.501µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.600µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.627µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.531µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.617µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.325µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 190ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.535µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 67.580µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.565µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 174.412µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.774µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.315µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.567µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.521µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 159ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.780µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.573µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.460µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.285µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.535µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.785µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.486µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.325µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 210ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.916µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.269µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.573µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.354µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.347µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.203µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.511µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.371µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 183ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.565µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.795µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.645µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.142µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.157µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.405µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.635µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.066µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 179ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.645µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.311µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.546µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.986µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 170ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.648µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.418µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.552µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.058µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 170ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.660µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.590µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.520µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.438µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 194ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.592µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.328µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.555µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.420µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.073µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 71.189µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.760µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 195.719µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 200ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.913µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.265µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.550µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.382µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.046µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.971µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.422µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.062µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 198ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.635µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.694µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.543µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 167.735µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.007µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.861µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.556µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.012µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.704µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.372µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.540µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.791µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.142µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.512µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.495µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.833µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.232µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.397µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.635µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.700µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.433µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.185µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.462µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.482µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.020µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.914µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.521µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.296µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.068µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.170µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.607µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.400µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.495µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.983µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.554µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.697µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 164ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.597µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.700µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.513µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.359µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.535µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.330µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.740µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.702µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 176ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.469µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.707µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.612µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 171.130µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 166ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.936µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.818µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.589µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.278µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 180ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.451µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.408µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.526µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.690µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.698µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.061µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.604µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.251µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 188ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.260µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.406µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.530µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.884µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.804µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.820µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.580µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.914µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.640µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.104µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.547µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.442µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.729µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.777µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.637µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.313µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.325µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 88.797µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 4.137µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 203.071µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 217ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.705µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.302µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.665µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.447µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 190ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.908µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.542µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.518µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.689µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.062µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.470µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.532µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.825µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 191ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.387µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.616µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.635µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.649µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.600µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.704µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.710µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.281µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 195ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.505µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.427µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.577µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.420µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.932µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.585µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.482µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.500µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 170ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.157µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.189µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.603µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.365µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 188ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.136µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.355µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.474µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.587µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.678µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.642µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.567µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.370µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.631µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.402µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.624µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 178.660µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 184ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.635µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.848µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.518µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.833µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.905µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.397µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.571µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.216µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 166ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.923µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.153µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.510µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.808µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 190ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.798µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.635µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.562µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.938µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 198ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.842µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.708µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.589µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.168µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 164ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.132µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.967µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.545µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.167µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 192ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.367µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.710µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.627µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.740µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 169ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.728µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.727µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.633µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.600µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 180ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.765µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.042µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.468µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.182µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.637µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.188µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.605µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.285µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.593µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 69.738µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.609µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.895µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.560µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.966µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.487µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.897µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.249µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.963µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.573µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.895µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 176ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.985µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.602µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.479µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 171.178µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.995µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.745µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.571µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.135µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.813µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.255µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.502µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.142µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 177ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.893µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.772µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.550µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.931µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 190ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.869µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.935µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.614µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.509µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.574µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.650µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.537µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.557µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 186ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.272µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.065µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.710µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.700µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.902µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.697µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.462µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.297µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.598µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.717µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.530µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.050µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.743µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.529µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.480µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.475µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 163ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.492µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.374µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.521µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.774µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 180ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.468µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.249µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.395µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.762µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 172ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.644µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.475µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.760µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.262µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 180ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.513µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.940µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.548µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.847µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.779µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.795µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.612µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.976µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 187ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.632µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.419µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.590µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.627µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 178ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.590µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.664µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.491µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.739µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 181ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.584µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.243µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.525µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 167.937µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 173ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.487µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.743µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.532µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.502µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.682µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 69.270µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.610µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 186.204µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 204ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.730µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.374µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.517µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.492µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 170ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.325µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.261µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.583µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.830µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 160ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.684µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.114µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.448µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.671µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 150ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.775µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.408µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.586µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.150µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 156ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.782µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.465µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.582µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.500µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 160ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.891µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.162µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.510µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.030µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 195ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.334µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.415µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.533µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.999µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 164ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.853µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.637µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.573µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.999µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 162ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.776µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.364µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.630µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.481µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.643µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.747µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.533µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.743µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 183ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.804µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.246µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.468µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.872µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 152ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.918µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.742µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.507µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.013µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.530µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.019µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.647µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.254µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 182ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.732µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.114µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.516µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.349µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 163ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.062µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.622µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.565µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.895µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 159ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.549µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.815µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.455µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.305µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.911µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.075µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.501µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.978µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 156ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.681µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.155µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.537µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.918µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 181ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.553µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.308µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.457µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.355µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 187ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.700µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.020µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.590µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 171.103µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 176ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.744µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.840µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.630µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.430µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.698µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 69.123µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.668µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.880µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 183ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.650µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.010µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.602µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.048µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 193ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.947µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.979µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.437µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.962µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.912µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.967µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.485µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.602µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 157ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.881µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.552µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.747µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 176.077µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 195ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.268µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.978µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.562µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.042µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 185ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.387µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.167µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.467µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.700µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 156ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.493µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.192µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.697µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 172.180µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 158ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.209µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.645µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.727µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.043µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 164ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.833µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.357µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.465µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.519µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.752µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.444µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.499µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.673µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 168ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.657µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 64.179µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.534µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 177.487µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 167ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.448µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.755µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.430µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.569µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 155ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.530µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.538µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.473µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.083µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 175ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.709µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.399µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.548µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.270µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 163ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.726µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.555µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.552µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.524µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 174ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.700µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.434µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.507µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.032µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.959µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.579µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.497µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 174.975µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 180ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 61.272µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.460µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.510µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 170.512µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 155ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.560µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.635µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.542µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.467µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.994µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.570µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.471µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 168.928µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.819µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 63.210µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.469µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 169.730µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 165ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 60.650µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 62.495µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 3.642µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 175.255µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 609ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 144.136µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 122.263µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 10.880µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 372.572µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 320ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 114.423µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 119.044µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 7.372µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 349.717µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 314ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 113.500µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 116.863µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.471µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 316.381µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 323ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 113.298µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 115.466µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.786µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 313.053µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 341ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 112.775µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 116.223µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.549µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 314.824µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 303ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 112.212µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 116.963µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.343µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 312.242µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 304ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 112.443µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 115.893µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.578µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 312.855µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 307ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 112.838µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 115.735µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.509µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 312.270µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 329ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 113.181µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 116.843µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.603µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 315.806µs
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 309ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 113.237µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 116.743µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 6.385µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 314.839µs
+  Matches found: 1, Proofs: 256/256
+····End:     Matching Sumcheck (thread ThreadId(38)) 49.003ms
+····Start:   Accumulation Sumcheck (thread ThreadId(38))
+·····Start:   Distributed sumcheck product (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 427ns
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 119.535µs
+······Start:   PSStoSS (thread ThreadId(38))
+······End:     PSStoSS (thread ThreadId(38)) 115.369µs
+······Start:   Local: Phase 2 (thread ThreadId(38))
+······End:     Local: Phase 2 (thread ThreadId(38)) 7.311µs
+·····End:     Distributed sumcheck product (thread ThreadId(38)) 324.419µs
+  Party total contribution: BigInt([100, 0, 0, 0])
+····End:     Accumulation Sumcheck (thread ThreadId(38)) 404.729µs
+···End:     Distributed Sumcheck (thread ThreadId(38)) 49.848ms
+···Start:   Opening Phase (thread ThreadId(38))
+····Start:   Distributed opening (thread ThreadId(38))
+·····Start:   Local: Phase 1 (thread ThreadId(38))
+·····End:     Local: Phase 1 (thread ThreadId(38)) 22.037ms
+·····Start:   Local: Something (thread ThreadId(38))
+······Start:   Distributed opening (thread ThreadId(38))
+······Start:   Local: Phase 1 (thread ThreadId(38))
+······End:     Local: Phase 1 (thread ThreadId(38)) 904ns
+······Start:   Local: Something (thread ThreadId(38))
+···End:     Opening Phase (thread ThreadId(38)) 29.787ms
+······Start:   Final Aggregation (thread ThreadId(38))
+  Party 0 contribution: BigInt([100, 0, 0, 0])
+······Start:   Comm: from 0 to leader, 32B (thread ThreadId(38))
