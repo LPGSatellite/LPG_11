@@ -1,0 +1,337 @@
+Args:
+  Number of session tables    : 128
+  Parameter of LOCA           : 1
+  Monitor sleep time (ms) : 100
+
+Started ./src/main with PID: 8
+Initializing curve parameters...
+Number of sessions (N): 128
+Number of secrets (K): 1
+06:57:41        8 root      20   0   35944  28812   3852 R 100.0   0.2   0:00.15 main
+(enter) Call to r1cs_gg_ppzksnark_generator	[             ]	(1747033061.7273s x0.00 from start)
+  (enter) Call to r1cs_constraint_system::swap_AB_if_beneficial	[             ]	(1747033061.7507s x0.00 from start)
+    (enter) Estimate densities                 	[             ]	(1747033061.7507s x0.00 from start)
+      * Non-zero A-count (estimate): 48986
+      * Non-zero B-count (estimate): 19345
+    (leave) Estimate densities                 	[0.0051s x1.00]	(1747033061.7559s x0.00 from start)
+    Swap is not beneficial, not performing
+  (leave) Call to r1cs_constraint_system::swap_AB_if_beneficial	[0.0052s x1.00]	(1747033061.7559s x0.00 from start)
+  (enter) Call to r1cs_to_qap_instance_map_with_evaluation	[             ]	(1747033061.7560s x0.00 from start)
+    (enter) Compute evaluations of A, B, C, H at t	[             ]	(1747033061.7599s x0.00 from start)
+06:57:41        8 root      20   0   76384  67500   4188 R 100.0   0.4   0:00.42 main
+06:57:42        8 root      20   0   80484  71460   4188 R  93.8   0.4   0:00.67 main
+    (leave) Compute evaluations of A, B, C, H at t	[0.6048s x1.00]	(1747033062.3648s x0.00 from start)
+  (leave) Call to r1cs_to_qap_instance_map_with_evaluation	[0.6088s x1.00]	(1747033062.3648s x0.00 from start)
+  * QAP number of variables: 59355
+  * QAP pre degree: 60945
+  * QAP degree: 98304
+  * QAP number of input variables: 32897
+  (enter) Compute query densities            	[             ]	(1747033062.3651s x0.00 from start)
+  (leave) Compute query densities            	[0.0009s x1.00]	(1747033062.3660s x0.00 from start)
+  (enter) Compute gamma_ABC for R1CS verification key	[             ]	(1747033062.3660s x0.00 from start)
+  (leave) Compute gamma_ABC for R1CS verification key	[0.0169s x1.00]	(1747033062.3829s x0.00 from start)
+  (enter) Compute L query for R1CS proving key	[             ]	(1747033062.3830s x0.00 from start)
+  (leave) Compute L query for R1CS proving key	[0.0142s x1.00]	(1747033062.3972s x0.00 from start)
+  (enter) Generating G1 MSM window table     	[             ]	(1747033062.3973s x0.00 from start)
+06:57:42        8 root      20   0   92316  86468   4188 R 100.0   0.5   0:00.95 main
+06:57:42        8 root      20   0   92316  86468   4188 R 100.0   0.5   0:01.21 main
+    Choosing window size 13 for 127815 elements
+    * G1 window: 13
+  (leave) Generating G1 MSM window table     	[0.4787s x1.00]	(1747033062.8760s x0.00 from start)
+  (enter) Generating G2 MSM window table     	[             ]	(1747033062.8760s x0.00 from start)
+06:57:42        8 root      20   0  101532  95708   4188 R 100.0   0.6   0:01.47 main
+06:57:43        8 root      20   0  101532  95708   4188 R  93.3   0.6   0:01.73 main
+06:57:43        8 root      20   0  101532  95708   4188 R 100.0   0.6   0:02.00 main
+    Choosing window size 11 for 19345 elements
+    * G2 window: 11
+  (leave) Generating G2 MSM window table     	[0.6788s x1.00]	(1747033063.5548s x0.00 from start)
+  (enter) Generate R1CS proving key          	[             ]	(1747033063.5549s x0.00 from start)
+    (enter) Generate queries                   	[             ]	(1747033063.5640s x0.00 from start)
+      (enter) Compute the A-query                	[             ]	(1747033063.5641s x0.00 from start)
+      .06:57:43        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:02.26 main
+06:57:43        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:02.52 main
+.06:57:44        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:02.78 main
+06:57:44        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:03.04 main
+06:57:44        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:03.30 main
+.06:57:44        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:03.56 main
+06:57:45        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:03.82 main
+06:57:45        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:04.08 main
+.06:57:45        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:04.34 main
+06:57:45        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:04.60 main
+.06:57:46        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:04.86 main
+06:57:46        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:05.12 main
+.06:57:46        8 root      20   0  107100 101184   4188 R 100.0   0.6   0:05.38 main
+ DONE!
+      (leave) Compute the A-query                	[3.5640s x1.00]	(1747033067.1281s x0.00 from start)
+      (enter) Compute the B-query                	[             ]	(1747033067.1281s x0.00 from start)
+06:57:47        8 root      20   0  112544 101184   4188 R 100.0   0.6   0:05.64 main
+06:57:47        8 root      20   0  112544 101448   4188 R 100.0   0.6   0:05.90 main
+06:57:47        8 root      20   0  112544 101712   4188 R 100.0   0.6   0:06.16 main
+06:57:47        8 root      20   0  112544 101712   4188 R 100.0   0.6   0:06.41 main
+06:57:48        8 root      20   0  112544 101976   4188 R 100.0   0.6   0:06.67 main
+06:57:48        8 root      20   0  112544 102240   4188 R 100.0   0.6   0:06.93 main
+06:57:48        8 root      20   0  112544 102240   4188 R 100.0   0.6   0:07.19 main
+06:57:48        8 root      20   0  112544 102504   4188 R 100.0   0.6   0:07.46 main
+06:57:49        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:07.72 main
+06:57:49        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:07.97 main
+06:57:49        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:08.23 main
+06:57:49        8 root      20   0  112544 104552   4188 R  93.3   0.6   0:08.49 main
+06:57:50        8 root      20   0  112544 104552   4188 R  93.3   0.6   0:08.75 main
+06:57:50        8 root      20   0  112544 104552   4188 R  93.3   0.6   0:09.01 main
+06:57:50        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:09.28 main
+06:57:50        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:09.54 main
+06:57:51        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:09.81 main
+06:57:51        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:10.07 main
+06:57:51        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:10.33 main
+06:57:51        8 root      20   0  112544 104552   4188 R 100.0   0.6   0:10.59 main
+06:57:52        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:10.85 main
+06:57:52        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:11.11 main
+06:57:52        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:11.37 main
+06:57:53        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:11.63 main
+06:57:53        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:11.90 main
+06:57:53        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:12.16 main
+06:57:53        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:12.42 main
+06:57:54        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:12.68 main
+06:57:54        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:12.94 main
+06:57:54        8 root      20   0  112544 106600   4188 R 100.0   0.7   0:13.20 main
+06:57:54        8 root      20   0  112544 106600   4188 R  93.8   0.7   0:13.46 main
+      Non-zero coordinate count: 19345/59356 (32.59%)
+      (leave) Compute the B-query                	[8.1286s x1.00]	(1747033075.2567s x0.00 from start)
+      (enter) Compute the H-query                	[             ]	(1747033075.2568s x0.00 from start)
+      .06:57:55        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:13.73 main
+06:57:55        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:13.99 main
+06:57:55        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:14.25 main
+.06:57:55        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:14.51 main
+06:57:56        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:14.77 main
+06:57:56        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:15.03 main
+.06:57:56        8 root      20   0  121760 115856   4188 R  93.8   0.7   0:15.29 main
+06:57:56        8 root      20   0  121760 115856   4188 R  93.8   0.7   0:15.55 main
+06:57:57        8 root      20   0  121760 115856   4188 R  93.8   0.7   0:15.81 main
+.06:57:57        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:16.07 main
+06:57:57        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:16.33 main
+.06:57:57        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:16.60 main
+06:57:58        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:16.86 main
+06:57:58        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:17.12 main
+.06:57:58        8 root      20   0  121760 115856   4188 R  93.8   0.7   0:17.38 main
+06:57:59        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:17.64 main
+06:57:59        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:17.90 main
+.06:57:59        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:18.16 main
+06:57:59        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:18.43 main
+.06:58:00        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:18.69 main
+06:58:00        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:18.95 main
+06:58:00        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:19.21 main
+.06:58:00        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:19.47 main
+06:58:01        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:19.73 main
+06:58:01        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:19.99 main
+.06:58:01        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:20.25 main
+06:58:01        8 root      20   0  121760 115856   4188 R 100.0   0.7   0:20.51 main
+ DONE!
+      (leave) Compute the H-query                	[7.0242s x1.00]	(1747033082.2809s x0.00 from start)
+      (enter) Compute the L-query                	[             ]	(1747033082.2810s x0.00 from start)
+      .06:58:02        8 root      20   0  124244 118428   4188 R 100.0   0.7   0:20.77 main
+06:58:02        8 root      20   0  124244 118428   4188 R 100.0   0.7   0:21.03 main
+06:58:02        8 root      20   0  124244 118428   4188 R  93.8   0.7   0:21.29 main
+.06:58:02        8 root      20   0  124244 118428   4188 R  93.8   0.7   0:21.55 main
+06:58:03        8 root      20   0  124244 118428   4188 R  93.8   0.7   0:21.81 main
+06:58:03        8 root      20   0  124244 118428   4188 R 100.0   0.7   0:22.08 main
+.06:58:03        8 root      20   0  124244 118428   4188 R 100.0   0.7   0:22.34 main
+06:58:04        8 root      20   0  124244 118428   4188 R 100.0   0.7   0:22.60 main
+ DONE!
+      (leave) Compute the L-query                	[1.9115s x1.00]	(1747033084.1925s x0.00 from start)
+    (leave) Generate queries                   	[20.6285s x1.00]	(1747033084.1926s x0.00 from start)
+  (leave) Generate R1CS proving key          	[20.6377s x1.00]	(1747033084.1926s x0.00 from start)
+  (enter) Generate R1CS verification key     	[             ]	(1747033084.1926s x0.00 from start)
+    (enter) Call to alt_bn128_ate_reduced_pairing	[             ]	(1747033084.1926s x0.00 from start)
+      (enter) Call to alt_bn128_ate_pairing      	[             ]	(1747033084.1926s x0.00 from start)
+        (enter) Call to alt_bn128_ate_precompute_G1	[             ]	(1747033084.1926s x0.00 from start)
+        (leave) Call to alt_bn128_ate_precompute_G1	[0.0000s x1.11]	(1747033084.1926s x0.00 from start)
+        (enter) Call to alt_bn128_ate_precompute_G2	[             ]	(1747033084.1926s x0.00 from start)
+        (leave) Call to alt_bn128_ate_precompute_G2	[0.0012s x1.00]	(1747033084.1938s x0.00 from start)
+        (enter) Call to alt_bn128_ate_miller_loop  	[             ]	(1747033084.1939s x0.00 from start)
+        (leave) Call to alt_bn128_ate_miller_loop  	[0.0029s x1.00]	(1747033084.1968s x0.00 from start)
+      (leave) Call to alt_bn128_ate_pairing      	[0.0042s x1.00]	(1747033084.1968s x0.00 from start)
+      (enter) Call to alt_bn128_final_exponentiation	[             ]	(1747033084.1968s x0.00 from start)
+        (enter) Call to alt_bn128_final_exponentiation_first_chunk	[             ]	(1747033084.1968s x0.00 from start)
+        (leave) Call to alt_bn128_final_exponentiation_first_chunk	[0.0001s x1.01]	(1747033084.1970s x0.00 from start)
+        (enter) Call to alt_bn128_final_exponentiation_last_chunk	[             ]	(1747033084.1971s x0.00 from start)
+          (enter) Call to alt_bn128_exp_by_neg_z     	[             ]	(1747033084.1971s x0.00 from start)
+          (leave) Call to alt_bn128_exp_by_neg_z     	[0.0016s x0.98]	(1747033084.1987s x0.00 from start)
+          (enter) Call to alt_bn128_exp_by_neg_z     	[             ]	(1747033084.1988s x0.00 from start)
+          (leave) Call to alt_bn128_exp_by_neg_z     	[0.0015s x1.00]	(1747033084.2003s x0.00 from start)
+          (enter) Call to alt_bn128_exp_by_neg_z     	[             ]	(1747033084.2003s x0.00 from start)
+          (leave) Call to alt_bn128_exp_by_neg_z     	[0.0015s x1.00]	(1747033084.2019s x0.00 from start)
+        (leave) Call to alt_bn128_final_exponentiation_last_chunk	[0.0051s x0.99]	(1747033084.2021s x0.00 from start)
+      (leave) Call to alt_bn128_final_exponentiation	[0.0053s x0.98]	(1747033084.2022s x0.00 from start)
+    (leave) Call to alt_bn128_ate_reduced_pairing	[0.0096s x0.99]	(1747033084.2022s x0.00 from start)
+    (enter) Encode gamma_ABC for R1CS verification key	[             ]	(1747033084.2055s x0.00 from start)
+      .06:58:04        8 root      20   0  127328 121592   4192 R  93.3   0.7   0:22.85 main
+06:58:04        8 root      20   0  127328 121592   4192 R 100.0   0.7   0:23.10 main
+.06:58:04        8 root      20   0  127328 121592   4192 R 100.0   0.7   0:23.36 main
+06:58:05        8 root      20   0  127328 121592   4192 R 100.0   0.7   0:23.62 main
+06:58:05        8 root      20   0  127328 121592   4192 R 100.0   0.7   0:23.89 main
+.06:58:05        8 root      20   0  127328 121592   4192 R  93.3   0.7   0:24.14 main
+06:58:05        8 root      20   0  127328 121592   4192 R  93.3   0.7   0:24.40 main
+06:58:06        8 root      20   0  127328 121592   4192 R 100.0   0.7   0:24.67 main
+.06:58:06        8 root      20   0  127328 121592   4192 R 100.0   0.7   0:24.93 main
+ DONE!
+    (leave) Encode gamma_ABC for R1CS verification key	[2.3478s x0.99]	(1747033086.5533s x0.00 from start)
+  (leave) Generate R1CS verification key     	[2.3608s x0.99]	(1747033086.5534s x0.00 from start)
+(leave) Call to r1cs_gg_ppzksnark_generator	[24.8261s x1.00]	(1747033086.5534s x0.00 from start)
+* G1 elements in PK: 243474
+* Non-zero G1 elements in PK: 203463
+* G2 elements in PK: 59357
+* Non-zero G2 elements in PK: 19346
+* PK size in bits: 62968259
+* G1 elements in VK: 32897
+* G2 elements in VK: 2
+* GT elements in VK: 1
+* VK size in bits: 10495416
+(enter) Call to r1cs_gg_ppzksnark_prover   	[             ]	(1747033086.6211s x0.00 from start)
+  (enter) Compute the polynomial H           	[             ]	(1747033086.6212s x0.00 from start)
+    (enter) Call to r1cs_to_qap_witness_map    	[             ]	(1747033086.6212s x0.00 from start)
+      (enter) Compute evaluation of polynomials A, B on set S	[             ]	(1747033086.6224s x0.00 from start)
+      (leave) Compute evaluation of polynomials A, B on set S	[0.0499s x1.00]	(1747033086.6723s x0.00 from start)
+      (enter) Compute coefficients of polynomial A	[             ]	(1747033086.6724s x0.00 from start)
+06:58:06        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:25.18 main
+06:58:06        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:25.44 main
+      (leave) Compute coefficients of polynomial A	[0.3865s x1.00]	(1747033087.0589s x0.00 from start)
+      (enter) Compute coefficients of polynomial B	[             ]	(1747033087.0590s x0.00 from start)
+06:58:07        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:25.71 main
+      (leave) Compute coefficients of polynomial B	[0.3792s x1.00]	(1747033087.4382s x0.00 from start)
+      (enter) Compute ZK-patch                   	[             ]	(1747033087.4382s x0.00 from start)
+      (leave) Compute ZK-patch                   	[0.0324s x1.00]	(1747033087.4707s x0.00 from start)
+      (enter) Compute evaluation of polynomial A on set T	[             ]	(1747033087.4707s x0.00 from start)
+06:58:07        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:25.97 main
+06:58:07        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:26.23 main
+      (leave) Compute evaluation of polynomial A on set T	[0.3929s x1.00]	(1747033087.8637s x0.00 from start)
+      (enter) Compute evaluation of polynomial B on set T	[             ]	(1747033087.8637s x0.00 from start)
+06:58:07        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:26.49 main
+      (leave) Compute evaluation of polynomial B on set T	[0.3838s x1.00]	(1747033088.2476s x0.00 from start)
+      (enter) Compute evaluation of polynomial H on set T	[             ]	(1747033088.2477s x0.00 from start)
+        (enter) Compute evaluation of polynomial C on set S	[             ]	(1747033088.2640s x0.00 from start)
+        (leave) Compute evaluation of polynomial C on set S	[0.0308s x1.00]	(1747033088.2947s x0.00 from start)
+        (enter) Compute coefficients of polynomial C	[             ]	(1747033088.2948s x0.00 from start)
+06:58:08        8 root      20   0  125540 120056   4220 R  93.8   0.7   0:26.75 main
+06:58:08        8 root      20   0  125540 120056   4220 R  93.8   0.7   0:27.01 main
+        (leave) Compute coefficients of polynomial C	[0.3754s x1.00]	(1747033088.6702s x0.00 from start)
+        (enter) Compute evaluation of polynomial C on set T	[             ]	(1747033088.6703s x0.00 from start)
+06:58:08        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:27.27 main
+        (leave) Compute evaluation of polynomial C on set T	[0.3874s x1.00]	(1747033089.0577s x0.00 from start)
+        (enter) Divide by Z on set T               	[             ]	(1747033089.0622s x0.00 from start)
+06:58:08        8 root      20   0  125540 120056   4220 R  93.8   0.7   0:27.54 main
+        (leave) Divide by Z on set T               	[0.1625s x1.00]	(1747033089.2247s x0.00 from start)
+      (leave) Compute evaluation of polynomial H on set T	[0.9771s x1.00]	(1747033089.2248s x0.00 from start)
+      (enter) Compute coefficients of polynomial H	[             ]	(1747033089.2248s x0.00 from start)
+06:58:09        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:27.80 main
+      (leave) Compute coefficients of polynomial H	[0.4179s x1.00]	(1747033089.6427s x0.00 from start)
+      (enter) Compute sum of H and ZK-patch      	[             ]	(1747033089.6428s x0.00 from start)
+      (leave) Compute sum of H and ZK-patch      	[0.0026s x1.00]	(1747033089.6454s x0.00 from start)
+    (leave) Call to r1cs_to_qap_witness_map    	[3.0242s x1.00]	(1747033089.6454s x0.00 from start)
+  (leave) Compute the polynomial H           	[3.0252s x1.00]	(1747033089.6463s x0.00 from start)
+  (enter) Compute the proof                  	[             ]	(1747033089.6465s x0.00 from start)
+    (enter) Compute evaluation to A-query      	[             ]	(1747033089.6466s x0.00 from start)
+    (enter) Process scalar vector              	[             ]	(1747033089.6474s x0.00 from start)
+06:58:09        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:28.06 main
+      * Elements of w skipped: 42339 (71.33%)
+      * Elements of w processed with special addition: 16889 (28.45%)
+      * Elements of w remaining: 128 (0.22%)
+    (leave) Process scalar vector              	[0.0557s x1.00]	(1747033089.7031s x0.00 from start)
+    (leave) Compute evaluation to A-query      	[0.0575s x1.00]	(1747033089.7041s x0.00 from start)
+    (enter) Compute evaluation to B-query      	[             ]	(1747033089.7041s x0.00 from start)
+    (enter) Process scalar vector              	[             ]	(1747033089.7041s x0.00 from start)
+      * Elements of w skipped: 18830 (97.34%)
+      * Elements of w processed with special addition: 388 (2.01%)
+      * Elements of w remaining: 127 (0.66%)
+    (leave) Process scalar vector              	[0.0074s x0.99]	(1747033089.7115s x0.00 from start)
+    (leave) Compute evaluation to B-query      	[0.0113s x0.99]	(1747033089.7154s x0.00 from start)
+    (enter) Compute evaluation to H-query      	[             ]	(1747033089.7154s x0.00 from start)
+06:58:09        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:28.33 main
+06:58:10        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:28.59 main
+06:58:10        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:28.85 main
+06:58:10        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:29.11 main
+06:58:10        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:29.37 main
+06:58:11        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:29.63 main
+06:58:11        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:29.89 main
+06:58:11        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:30.15 main
+06:58:11        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:30.42 main
+06:58:12        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:30.68 main
+06:58:12        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:30.94 main
+06:58:12        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:31.20 main
+06:58:12        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:31.46 main
+06:58:13        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:31.72 main
+06:58:13        8 root      20   0  125540 120056   4220 R  93.3   0.7   0:31.97 main
+06:58:13        8 root      20   0  125540 120056   4220 R  93.3   0.7   0:32.23 main
+06:58:13        8 root      20   0  125540 120056   4220 R  93.3   0.7   0:32.49 main
+06:58:14        8 root      20   0  125540 120056   4220 R  93.3   0.7   0:32.75 main
+06:58:14        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:33.02 main
+06:58:14        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:33.28 main
+06:58:14        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:33.54 main
+06:58:15        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:33.80 main
+06:58:15        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:34.06 main
+06:58:15        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:34.32 main
+06:58:16        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:34.59 main
+06:58:16        8 root      20   0  125540 120056   4220 R  93.8   0.7   0:34.85 main
+06:58:16        8 root      20   0  125540 120056   4220 R 100.0   0.7   0:35.11 main
+    (leave) Compute evaluation to H-query      	[7.1489s x1.00]	(1747033096.8643s x0.00 from start)
+    (enter) Compute evaluation to L-query      	[             ]	(1747033096.8644s x0.00 from start)
+    (enter) Process scalar vector              	[             ]	(1747033096.8644s x0.00 from start)
+      * Elements of w skipped: 25943 (98.05%)
+      * Elements of w processed with special addition: 514 (1.94%)
+      * Elements of w remaining: 1 (0.00%)
+    (leave) Process scalar vector              	[0.0021s x1.00]	(1747033096.8665s x0.00 from start)
+    (leave) Compute evaluation to L-query      	[0.0022s x1.00]	(1747033096.8666s x0.00 from start)
+  (leave) Compute the proof                  	[7.2277s x1.00]	(1747033096.8742s x0.00 from start)
+(leave) Call to r1cs_gg_ppzksnark_prover   	[10.2532s x1.00]	(1747033096.8743s x0.00 from start)
+* G1 elements in proof: 2
+* G2 elements in proof: 1
+* Proof size in bits: 1019
+(enter) Call to r1cs_gg_ppzksnark_verifier_strong_IC	[             ]	(1747033096.8746s x0.00 from start)
+  (enter) Call to r1cs_gg_ppzksnark_verifier_process_vk	[             ]	(1747033096.8747s x0.00 from start)
+    (enter) Call to alt_bn128_ate_precompute_G2	[             ]	(1747033096.8747s x0.00 from start)
+    (leave) Call to alt_bn128_ate_precompute_G2	[0.0012s x1.00]	(1747033096.8759s x0.00 from start)
+    (enter) Call to alt_bn128_ate_precompute_G2	[             ]	(1747033096.8759s x0.00 from start)
+    (leave) Call to alt_bn128_ate_precompute_G2	[0.0012s x1.00]	(1747033096.8771s x0.00 from start)
+  (leave) Call to r1cs_gg_ppzksnark_verifier_process_vk	[0.0035s x1.00]	(1747033096.8782s x0.00 from start)
+  (enter) Call to r1cs_gg_ppzksnark_online_verifier_strong_IC	[             ]	(1747033096.8782s x0.00 from start)
+    (enter) Call to r1cs_gg_ppzksnark_online_verifier_weak_IC	[             ]	(1747033096.8782s x0.00 from start)
+      (enter) Accumulate input                   	[             ]	(1747033096.8783s x0.00 from start)
+      (leave) Accumulate input                   	[0.0763s x1.00]	(1747033096.9546s x0.00 from start)
+      (enter) Check if the proof is well-formed  	[             ]	(1747033096.9546s x0.00 from start)
+      (leave) Check if the proof is well-formed  	[0.0000s x1.03]	(1747033096.9547s x0.00 from start)
+      (enter) Online pairing computations        	[             ]	(1747033096.9547s x0.00 from start)
+        (enter) Check QAP divisibility             	[             ]	(1747033096.9547s x0.00 from start)
+          (enter) Call to alt_bn128_ate_precompute_G1	[             ]	(1747033096.9547s x0.00 from start)
+          (leave) Call to alt_bn128_ate_precompute_G1	[0.0000s x1.02]	(1747033096.9547s x0.00 from start)
+          (enter) Call to alt_bn128_ate_precompute_G2	[             ]	(1747033096.9547s x0.00 from start)
+          (leave) Call to alt_bn128_ate_precompute_G2	[0.0012s x1.00]	(1747033096.9559s x0.00 from start)
+          (enter) Call to alt_bn128_ate_precompute_G1	[             ]	(1747033096.9559s x0.00 from start)
+          (leave) Call to alt_bn128_ate_precompute_G1	[0.0000s x1.01]	(1747033096.9560s x0.00 from start)
+          (enter) Call to alt_bn128_ate_precompute_G1	[             ]	(1747033096.9560s x0.00 from start)
+          (leave) Call to alt_bn128_ate_precompute_G1	[0.0000s x1.03]	(1747033096.9560s x0.00 from start)
+          (enter) Call to alt_bn128_ate_miller_loop  	[             ]	(1747033096.9560s x0.00 from start)
+          (leave) Call to alt_bn128_ate_miller_loop  	[0.0029s x1.00]	(1747033096.9589s x0.00 from start)
+          (enter) Call to alt_bn128_ate_double_miller_loop	[             ]	(1747033096.9589s x0.00 from start)
+          (leave) Call to alt_bn128_ate_double_miller_loop	[0.0046s x1.00]	(1747033096.9635s x0.00 from start)
+          (enter) Call to alt_bn128_final_exponentiation	[             ]	(1747033096.9636s x0.00 from start)
+            (enter) Call to alt_bn128_final_exponentiation_first_chunk	[             ]	(1747033096.9636s x0.00 from start)
+            (leave) Call to alt_bn128_final_exponentiation_first_chunk	[0.0001s x1.01]	(1747033096.9637s x0.00 from start)
+            (enter) Call to alt_bn128_final_exponentiation_last_chunk	[             ]	(1747033096.9637s x0.00 from start)
+              (enter) Call to alt_bn128_exp_by_neg_z     	[             ]	(1747033096.9638s x0.00 from start)
+              (leave) Call to alt_bn128_exp_by_neg_z     	[0.0015s x1.00]	(1747033096.9653s x0.00 from start)
+              (enter) Call to alt_bn128_exp_by_neg_z     	[             ]	(1747033096.9654s x0.00 from start)
+              (leave) Call to alt_bn128_exp_by_neg_z     	[0.0015s x1.00]	(1747033096.9669s x0.00 from start)
+              (enter) Call to alt_bn128_exp_by_neg_z     	[             ]	(1747033096.9669s x0.00 from start)
+              (leave) Call to alt_bn128_exp_by_neg_z     	[0.0015s x1.00]	(1747033096.9684s x0.00 from start)
+            (leave) Call to alt_bn128_final_exponentiation_last_chunk	[0.0050s x1.00]	(1747033096.9687s x0.00 from start)
+          (leave) Call to alt_bn128_final_exponentiation	[0.0051s x1.00]	(1747033096.9687s x0.00 from start)
+          QAP divisibility check failed.
+        (leave) Check QAP divisibility             	[0.0140s x1.00]	(1747033096.9687s x0.00 from start)
+      (leave) Online pairing computations        	[0.0141s x1.00]	(1747033096.9688s x0.00 from start)
+    (leave) Call to r1cs_gg_ppzksnark_online_verifier_weak_IC	[0.0905s x1.00]	(1747033096.9688s x0.00 from start)
+  (leave) Call to r1cs_gg_ppzksnark_online_verifier_strong_IC	[0.0906s x1.00]	(1747033096.9688s x0.00 from start)
+(leave) Call to r1cs_gg_ppzksnark_verifier_strong_IC	[0.0942s x1.00]	(1747033096.9688s x0.00 from start)
+Number of R1CS constraints: 60945
+Verification status: FAIL
+06:58:16        8 root      20   0  121252 115868   4320 R 100.0   0.7   0:35.37 main
+06:58:17  ./src/main not found.
+src/main process has exited. Monitoring script will terminate.
