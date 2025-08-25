@@ -1,0 +1,49 @@
+Args:
+  Field size              : 2748779069441
+  l                       : 8
+  t                       : 40
+  Number of parties        : 256
+  Number of repeats        : 100
+  Monitor sleep time (ms) : 1
+
+Started ./MicroBench with PID: 8
+07:01:52        8 root      20   0   13632   8228   6628 R 100.0   0.1   0:00.15 MicroBench
+07:01:52        8 root      20   0   13632   8228   6628 R  93.8   0.1   0:00.32 MicroBench
+07:01:52        8 root      20   0   13632   8228   6628 R 100.0   0.1   0:00.49 MicroBench
+07:01:52        8 root      20   0   14028   8816   6692 R  93.3   0.1   0:00.65 MicroBench
+07:01:53        8 root      20   0   14028   8816   6692 R 100.0   0.1   0:00.82 MicroBench
+07:01:53        8 root      20   0   14028   8816   6692 R 100.0   0.1   0:00.99 MicroBench
+07:01:53        8 root      20   0   14028   8816   6692 R 100.0   0.1   0:01.16 MicroBench
+07:01:53        8 root      20   0   14028   8816   6692 R 100.0   0.1   0:01.33 MicroBench
+07:01:53        8 root      20   0   14028   8816   6692 R 100.0   0.1   0:01.49 MicroBench
+07:01:53        8 root      20   0   14028   8816   6692 R 100.0   0.1   0:01.67 MicroBench
+07:01:54        8 root      20   0   14028   8816   6692 R  93.8   0.1   0:01.84 MicroBench
+07:01:54        8 root      20   0   14424   9080   6692 R  93.8   0.1   0:02.01 MicroBench
+07:01:54        8 root      20   0   14424   9080   6692 R 100.0   0.1   0:02.19 MicroBench
+07:01:54        8 root      20   0   14424   9080   6692 R 100.0   0.1   0:02.36 MicroBench
+07:01:54        8 root      20   0   14424   9080   6692 R  93.3   0.1   0:02.52 MicroBench
+07:01:54        8 root      20   0   14424   9080   6692 R 100.0   0.1   0:02.70 MicroBench
+07:01:55        8 root      20   0   14424   9080   6692 R 100.0   0.1   0:02.88 MicroBench
+07:01:55        8 root      20   0   14424   9080   6692 R  93.8   0.1   0:03.05 MicroBench
+07:01:55        8 root      20   0   14424   9080   6692 R 100.0   0.1   0:03.22 MicroBench
+07:01:55        8 root      20   0   14556   9344   6692 R 100.0   0.1   0:03.39 MicroBench
+07:01:55        8 root      20   0   14556   9344   6692 R 100.0   0.1   0:03.56 MicroBench
+07:01:55        8 root      20   0   14536   9432   6692 R  93.8   0.1   0:03.73 MicroBench
+07:01:56        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:03.90 MicroBench
+07:01:56        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:04.07 MicroBench
+07:01:56        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:04.24 MicroBench
+07:01:56        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:04.40 MicroBench
+07:01:56        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:04.57 MicroBench
+07:01:56        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:04.74 MicroBench
+07:01:57        8 root      20   0   14536   9432   6692 R  93.8   0.1   0:04.91 MicroBench
+07:01:57        8 root      20   0   14536   9432   6692 R  93.8   0.1   0:05.08 MicroBench
+07:01:57        8 root      20   0   14536   9432   6692 R  93.3   0.1   0:05.24 MicroBench
+07:01:57        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:05.42 MicroBench
+07:01:57        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:05.59 MicroBench
+07:01:57        8 root      20   0   14536   9432   6692 R 100.0   0.1   0:05.76 MicroBench
+Avg reg. time: 10086644
+Avg opt. time: 15299641
+Median reg. time: 10021750
+Median opt. time: 15216646
+07:01:58  MicroBench not found.
+MicroBench process has exited. Monitoring script will terminate.

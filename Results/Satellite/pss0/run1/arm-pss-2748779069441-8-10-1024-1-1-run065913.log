@@ -1,0 +1,27 @@
+Args:
+  Field size              : 2748779069441
+  l                       : 8
+  t                       : 10
+  Number of parties        : 1024
+  Number of repeats        : 1
+  Monitor sleep time (ms) : 1
+
+Started ./MicroBench with PID: 9
+06:59:14        9 root      20   0   14032   8756   6628 R 100.0   0.1   0:00.15 MicroBench
+06:59:14        9 root      20   0   14164   8756   6628 R 100.0   0.1   0:00.32 MicroBench
+06:59:14        9 root      20   0   14164   8756   6628 R 100.0   0.1   0:00.48 MicroBench
+06:59:14        9 root      20   0   14824   9608   6692 R  93.3   0.1   0:00.64 MicroBench
+06:59:14        9 root      20   0   14824   9608   6692 R 100.0   0.1   0:00.81 MicroBench
+06:59:14        9 root      20   0   14824   9608   6692 R 100.0   0.1   0:00.97 MicroBench
+06:59:15        9 root      20   0   14824   9608   6692 R 100.0   0.1   0:01.14 MicroBench
+06:59:15        9 root      20   0   14824   9608   6692 R 100.0   0.1   0:01.30 MicroBench
+06:59:15        9 root      20   0   15880  10664   6692 R 100.0   0.1   0:01.47 MicroBench
+06:59:15        9 root      20   0   15880  10664   6692 R 100.0   0.1   0:01.63 MicroBench
+06:59:15        9 root      20   0   15880  10664   6692 R 100.0   0.1   0:01.80 MicroBench
+06:59:15        9 root      20   0   15880  10664   6692 R 100.0   0.1   0:01.96 MicroBench
+Avg reg. time: 11882604
+Avg opt. time: 32743916
+Median reg. time: 11882604
+Median opt. time: 32743916
+06:59:15  MicroBench not found.
+MicroBench process has exited. Monitoring script will terminate.

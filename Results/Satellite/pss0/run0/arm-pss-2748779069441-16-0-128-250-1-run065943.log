@@ -1,0 +1,33 @@
+Args:
+  Field size              : 2748779069441
+  l                       : 16
+  t                       : 0
+  Number of parties        : 128
+  Number of repeats        : 250
+  Monitor sleep time (ms) : 1
+
+Started ./MicroBench with PID: 8
+06:59:43        8 root      20   0   13500   8228   6628 R 100.0   0.1   0:00.15 MicroBench
+06:59:43        8 root      20   0   13632   8228   6628 R 100.0   0.1   0:00.32 MicroBench
+06:59:44        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:00.49 MicroBench
+06:59:44        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:00.66 MicroBench
+06:59:44        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:00.82 MicroBench
+06:59:44        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:01.00 MicroBench
+06:59:44        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:01.17 MicroBench
+06:59:44        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:01.34 MicroBench
+06:59:45        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:01.51 MicroBench
+06:59:45        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:01.68 MicroBench
+06:59:45        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:01.84 MicroBench
+06:59:45        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:02.01 MicroBench
+06:59:45        8 root      20   0   13764   8552   6692 R  93.8   0.1   0:02.18 MicroBench
+06:59:46        8 root      20   0   13764   8552   6692 R  93.8   0.1   0:02.35 MicroBench
+06:59:46        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:02.52 MicroBench
+06:59:46        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:02.69 MicroBench
+06:59:46        8 root      20   0   13764   8552   6692 R  93.3   0.1   0:02.85 MicroBench
+06:59:46        8 root      20   0   13764   8552   6692 R 100.0   0.1   0:03.03 MicroBench
+Avg reg. time: 3062954
+Avg opt. time: 6939217
+Median reg. time: 3054542
+Median opt. time: 6934646
+06:59:46  MicroBench not found.
+MicroBench process has exited. Monitoring script will terminate.
