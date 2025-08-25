@@ -1,0 +1,501 @@
+lmi:/data/local/tmp $ ./bin/brands-c8fac6c736810c1f --bench                                 
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+lmi:/data/local/tmp $ ./bin/bench-a628a107b3687e88 --bench                                  
+Gnuplot not found, using plotters backend
+g bits: 835, g1 bits: 342, g2 bits: 516 
+register                time:   [2.6696 ms 2.6700 ms 2.6704 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+g bits: 1298, g1 bits: 985, g2 bits: 951 
+Benchmarking setup_withdrawal_params: Collecting 100 samples in estimated 5.3394 s (1000 iter
+setup_withdrawal_params time:   [5.3363 ms 5.3372 ms 5.3380 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) low mild
+
+g bits: 596, g1 bits: 593, g2 bits: 1495 
+withdraw                time:   [24.469 ms 24.483 ms 24.507 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+
+g bits: 1074, g1 bits: 661, g2 bits: 612 
+Benchmarking withdrawal_response: Collecting 100 samples in estimated 5.0039 s (1.9M iteratio
+withdrawal_response     time:   [2.6381 µs 2.6385 µs 2.6390 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+
+g bits: 1347, g1 bits: 761, g2 bits: 772 
+Benchmarking verify_withdrawal_response: Collecting 100 samples in estimated 5.3460 s (500 it
+verify_withdrawal_response
+                        time:   [10.680 ms 10.684 ms 10.689 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  7 (7.00%) high severe
+
+g bits: 1173, g1 bits: 981, g2 bits: 842 
+make_coin               time:   [2.8512 µs 2.8519 µs 2.8527 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low severe
+  2 (2.00%) low mild
+  5 (5.00%) high severe
+
+g bits: 1145, g1 bits: 192, g2 bits: 62 
+verify                  time:   [6.2928 ms 6.2997 ms 6.3097 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high severe
+
+g bits: 554, g1 bits: 1179, g2 bits: 909 
+spend                   time:   [4.4033 µs 4.4043 µs 4.4055 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+
+g bits: 772, g1 bits: 1030, g2 bits: 776 
+reveal_identity         time:   [3.1345 ms 3.1381 ms 3.1429 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) high mild
+  8 (8.00%) high severe
+
+g bits: 465, g1 bits: 976, g2 bits: 1227 
+Benchmarking blind_sign_message: Collecting 100 samples in estimated 5.9745 s (200 iterations
+blind_sign_message      time:   [29.805 ms 29.830 ms 29.869 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+
+g bits: 806, g1 bits: 1252, g2 bits: 1183 
+Benchmarking verify_blind_signature: Collecting 100 samples in estimated 5.0382 s (800 iterat
+verify_blind_signature  time:   [6.2835 ms 6.2852 ms 6.2871 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+
+lmi:/data/local/tmp $ ./bin/brands-c8fac6c736810c1f --bench                                 
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+lmi:/data/local/tmp $ ./bin/bench-a628a107b3687e88 --bench                                  
+Gnuplot not found, using plotters backend
+g bits: 130, g1 bits: 351, g2 bits: 580 
+register                time:   [2.6833 ms 2.6841 ms 2.6849 ms]
+                        change: [+0.4959% +0.5258% +0.5572%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+
+g bits: 765, g1 bits: 592, g2 bits: 369 
+Benchmarking setup_withdrawal_params: Collecting 100 samples in estimated 5.3620 s (1000 iter
+setup_withdrawal_params time:   [5.3604 ms 5.3613 ms 5.3623 ms]
+                        change: [+0.4280% +0.4529% +0.4776%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+g bits: 68, g1 bits: 736, g2 bits: 1316 
+withdraw                time:   [24.585 ms 24.589 ms 24.593 ms]
+                        change: [+0.3301% +0.4336% +0.4947%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+g bits: 395, g1 bits: 1104, g2 bits: 233 
+Benchmarking withdrawal_response: Collecting 100 samples in estimated 5.0039 s (1.9M iteratio
+withdrawal_response     time:   [2.6573 µs 2.6577 µs 2.6581 µs]
+                        change: [+0.6635% +0.6990% +0.7331%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low severe
+  2 (2.00%) low mild
+  4 (4.00%) high mild
+
+g bits: 745, g1 bits: 935, g2 bits: 1132 
+Benchmarking verify_withdrawal_response: Collecting 100 samples in estimated 5.3627 s (500 it
+verify_withdrawal_response
+                        time:   [10.729 ms 10.732 ms 10.735 ms]
+                        change: [+0.3949% +0.4467% +0.4924%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+
+g bits: 43, g1 bits: 1379, g2 bits: 371 
+make_coin               time:   [2.8609 µs 2.8617 µs 2.8627 µs]
+                        change: [+0.3336% +0.3788% +0.4259%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high severe
+
+g bits: 1459, g1 bits: 1482, g2 bits: 1451 
+verify                  time:   [6.3115 ms 6.3130 ms 6.3147 ms]
+                        change: [+0.0481% +0.2108% +0.3291%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+
+g bits: 1074, g1 bits: 1488, g2 bits: 1524 
+spend                   time:   [4.3935 µs 4.3948 µs 4.3963 µs]
+                        change: [-0.3043% -0.2266% -0.1551%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+
+g bits: 1374, g1 bits: 80, g2 bits: 1529 
+reveal_identity         time:   [3.1221 ms 3.1228 ms 3.1236 ms]
+                        change: [-0.6396% -0.4875% -0.3694%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+
+g bits: 751, g1 bits: 1086, g2 bits: 493 
+Benchmarking blind_sign_message: Warming up for 3.0000 sTotal size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Benchmarking blind_sign_message: Collecting 100 samples in estimated 5.9951 s (200 iterations)Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1758 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1759 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+Total size of BigUint data in the provided Coin instance: 1760 bytes
+blind_sign_message      time:   [29.988 ms 29.993 ms 29.999 ms]
+                        change: [+0.4142% +0.5475% +0.6368%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+g bits: 1487, g1 bits: 189, g2 bits: 624 
+Benchmarking verify_blind_signature: Collecting 100 samples in estimated 5.0479 s (800 iterat
+verify_blind_signature  time:   [6.3047 ms 6.3058 ms 6.3069 ms]
+                        change: [+0.2920% +0.3280% +0.3604%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) low mild
