@@ -1,7 +1,7 @@
 # LPG
 LPG is a framework for protecting location privacy at the protocol layer operating on an anonymous academic satellite. 
 
-The LEO satellite used in our experiments are not for commercial use, only for acadamic research. However, it replicates the satellite structure for COTS computing devices to minimize the impact of unrelated factors. Due to the double-blindness and licensing restrictions, we do not disclose all parameters, protocols and agreement contents of the satellite. We only make those contents that have no impact on the safety of satellite operation publicly available, and they can prove the conclusions and procedures of LPG. 
+The LEO satellite used in our experiments are not for commercial use, only for acadamic research. It replicates the satellite structure for COTS computing devices to minimize the impact of unrelated factors. Due to the double-blindness and licensing restrictions, we do not disclose all parameters, protocols and agreement contents of the satellite. We only make those contents that have no impact on the safety of satellite operation publicly available, and they can prove the conclusions and procedures of LPG. 
 
 This repository provides artifacts about LPG, and it also could help the community understand how to conduct experiments on acadamic satellites. Upon acceptance we will continue to improve the repository within ethical considerations. 
 
@@ -10,7 +10,7 @@ This repository provides artifacts about LPG, and it also could help the communi
 
 Our in-orbit testbed consists of three main components:
 
-**LEO Satellite:** A custom-built academic LEO satellite equipped with two commodity servers (8-core ARM processors, 16 GB DDR4 RAM, 256 GB storage) as payload.
+**LEO Satellite:** An academic COTS LEO satellite equipped with two commodity servers (8-core ARM processors, 16 GB DDR4 RAM, 256 GB storage) as payload.
 
 **Ground Server:** A terrestrial server acting as the MNO, with an Intel Xeon Gold 6330 CPU and 256 GB of RAM.
 
@@ -41,14 +41,17 @@ In [`Telemetry`](https://github.com/LPGSatellite/LPG/tree/main/telemetry), we pr
 
 ## Protocol Scripts
 
-In [`protocol-scripts`](https://github.com/LPGSatellite/LPG/tree/main/protocol-scripts), we provide the core shell scripts that execute the experimental workloads for LPG and the baseline systems. 
+In [`protocol-scripts`](https://github.com/LPGSatellite/LPG/tree/main/scripts), we provide the scripts for LPG and the baseline systems. 
 
-[`./satellite/`](https://github.com/LPGSatellite/LPG/tree/main/protocol-scripts/satellite) contains the workload scripts that run on the satellite's ARM processor. This includes scripts for running the different components of LPG, LOCA, and other baseline protocols.(LOCA, PGPP, MOSAIC, SPACECORE)
-[`./phone/`](https://github.com/LPGSatellite/LPG/tree/main/protocol-scripts/satellite) contains the client-side scripts that run on the UE phone. These scripts are used to drive the experiments, push necessary data, and benchmark performance
+[`./satellite/`](https://github.com/LPGSatellite/LPG/tree/main/scripts/satellite) contains the scripts that run on the satellite's ARM processor. This includes scripts for running the different components of LPG, LOCA, and other baseline protocols.(LOCA, PGPP, MOSAIC, SPACECORE)
 
-## Evaluation Data
+[`./phone/`](https://github.com/LPGSatellite/LPG/tree/main/scripts/phone) contains the client-side scripts that run on the UE phone. These scripts are used to drive the experiments, push necessary data, and benchmark performance.
 
-In [`data`](https://github.com/LPGSatellite/LPG/tree/main/data)  we provide the dataset and plotting code used in the LPG section 5 Evaluation.
+The plot.ipynb file can generate all figures in section 5 of LPG paper.
+
+## Evaluation Results
+
+In [`Results`](https://github.com/LPGSatellite/LPG/tree/main/Results)  we provide the datasets used in the LPG section 5 Evaluation. By comparing the timestamps of log and telemetry records, we can get the temperature and power metrics of the on-board implementation of certain protocols.
 
 ## References
 
